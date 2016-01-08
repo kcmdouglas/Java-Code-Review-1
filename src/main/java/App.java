@@ -19,7 +19,9 @@ public class App {
   }
 
   public static String wordPuzzle(String userInput) {
-    String newString = userInput;
+
+    String newString = userInput.replace("a", "-");
+
 
     return newString;
   }
