@@ -25,10 +25,18 @@ public class IntegrationTest extends FluentTest {
       assertThat(pageSource()).contains("");
     }
 
-    @Test
-      public void homePage() {
-        goTo("http://localhost:4567/");
-        assertThat(pageSource()).contains("I'll give you a puzzle:");
-      }
+  @Test
+    public void homePage() {
+      goTo("http://localhost:4567/");
+      assertThat(pageSource()).contains("I'll give you a puzzle:");
+    }
+
+  @Test
+    public void resultsPage() {
+      goTo("http://localhost:4567/");
+      fill("#stringFormInput").with("Here's my string!");
+      submit(".btn-info");
+      assertThat(pageSource()).contains("Now here's your sentence as a ~SuPeR MyStErIoUs PuZzLe~ :");
+    }
 
 }
