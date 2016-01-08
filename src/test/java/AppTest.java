@@ -24,4 +24,11 @@ public class AppTest {
     String result = "El-g-ntly, th- q--ck br-wn f-x j-mps -v-r th- l-zy d-g.";
     assertEquals(result, app.wordPuzzle("Elegantly, the quick brown fox jumps over the lazy dog."));
   }
+
+  @Test
+  public void wordPuzzle_shouldReplaceAllVowels_allVowelsToDashes() {
+    App app = new App();
+    String result = "-l-g-ntly, th- q--ck br-wn f-x j-mps -v-r th- l-zy d-g.";
+    assertEquals(result, app.wordPuzzle("Elegantly, the quick brown fox jumps over the lazy dog."));
+  }
 }
