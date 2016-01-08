@@ -20,8 +20,9 @@ public class App {
 
   public static String wordPuzzle(String userInput) {
 
-    String newString = userInput.replace("a", "-");
+    String newString = userInput.replaceAll("[ae]", "-");
 
+    // if userString.contains()
 
     return newString;
   }
