@@ -19,7 +19,7 @@ public class App {
   }
 
   public static String wordPuzzle(String userInput) {
-    String newString = "";
+    String newString = userInput;
 
     return newString;
   }
