@@ -20,7 +20,7 @@ public class App {
 
   public static String wordPuzzle(String userInput) {
 
-    String newString = userInput.replaceAll("[ae]", "-");
+    String newString = userInput.replaceAll("[aeiou]", "-");
 
     // if userString.contains()
 
