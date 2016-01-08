@@ -39,4 +39,11 @@ public class IntegrationTest extends FluentTest {
       assertThat(pageSource()).contains("Now here's your sentence as a ~SuPeR MyStErIoUs PuZzLe~ :");
     }
 
+  @Test
+    public void stringResult() {
+      goTo("http://localhost:4567/");
+      fill("#stringFormInput").with("Here's my string!");
+      submit(".btn-info");
+      assertThat(pageSource()).contains("H-r-'s my str-ng!");
+    }
 }
