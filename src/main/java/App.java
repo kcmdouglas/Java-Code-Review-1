@@ -16,13 +16,25 @@ public class App {
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
+    get("/results", (request, response) -> {
+      Map<String, Object> model = new HashMap<String, Object>();
+      model.put("template", "templates/results.vtl");
+
+      String userString = request.queryParams("stringFormInput");
+      model.put("userString", userString);
+
+      String puzzleResult = wordPuzzle(userString);
+      model.put("puzzleResult", puzzleResult);
+      return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
+
+    
+
   }
 
   public static String wordPuzzle(String userInput) {
 
     String newString = userInput.replaceAll("(?i)[aeiou]", "-");
-
-    // if userString.contains()
 
     return newString;
   }
