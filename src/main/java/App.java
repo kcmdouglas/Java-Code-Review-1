@@ -17,7 +17,7 @@ public class App {
     }, new VelocityTemplateEngine());
 
     get("/results", (request, response) -> {
-      Map<String, Object> model = new HashMap<String, Object>();
+      HashMap model = new HashMap();
       model.put("template", "templates/results.vtl");
 
       String userString = request.queryParams("stringFormInput");
@@ -25,11 +25,9 @@ public class App {
 
       String puzzleResult = wordPuzzle(userString);
       model.put("puzzleResult", puzzleResult);
+
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
-
-    
-
   }
 
   public static String wordPuzzle(String userInput) {
