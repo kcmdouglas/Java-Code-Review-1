@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AppTest" tests="2" skipped="0" failures="1" errors="0" timestamp="2016-01-08T16:44:33" hostname="epicodus-33.local" time="0.002">
+<testsuite name="AppTest" tests="2" skipped="0" failures="1" errors="0" timestamp="2016-01-08T16:45:51" hostname="epicodus-33.local" time="0.002">
   <properties/>
-  <testcase name="wordPuzzle_shouldReplaceAllLowerVowels_lowerCaseToDashes" classname="AppTest" time="0.001"/>
-  <testcase name="wordPuzzle_shouldReplaceAllVowels_allVowelsToDashes" classname="AppTest" time="0.001">
-    <failure message="org.junit.ComparisonFailure: expected:&lt;[-]l-g-ntly, th- q--ck ...&gt; but was:&lt;[E]l-g-ntly, th- q--ck ...&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[-]l-g-ntly, th- q--ck ...&gt; but was:&lt;[E]l-g-ntly, th- q--ck ...&gt;
+  <testcase name="wordPuzzle_shouldReplaceAllLowerVowels_lowerCaseToDashes" classname="AppTest" time="0.002">
+    <failure message="org.junit.ComparisonFailure: expected:&lt;[E]l-g-ntly, th- q--ck ...&gt; but was:&lt;[-]l-g-ntly, th- q--ck ...&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[E]l-g-ntly, th- q--ck ...&gt; but was:&lt;[-]l-g-ntly, th- q--ck ...&gt;
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
-	at AppTest.wordPuzzle_shouldReplaceAllVowels_allVowelsToDashes(AppTest.java:32)
+	at AppTest.wordPuzzle_shouldReplaceAllLowerVowels_lowerCaseToDashes(AppTest.java:25)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -52,6 +51,7 @@
 	at java.lang.Thread.run(Thread.java:745)
 </failure>
   </testcase>
+  <testcase name="wordPuzzle_shouldReplaceAllVowels_allVowelsToDashes" classname="AppTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
