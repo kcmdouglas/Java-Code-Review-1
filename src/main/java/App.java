@@ -1,4 +1,4 @@
-mport java.util.Map;
+import java.util.Map;
 import java.util.HashMap;
 
 import spark.ModelAndView;
@@ -18,7 +18,9 @@ public class App {
 
   }
 
-  public static String coinCombo(String userInput) {
+  public static String wordPuzzle(String userInput) {
+    String newString = "";
 
+    return newString;
   }
 }
